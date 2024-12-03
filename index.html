@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiesta de Colores</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- - Vincula el archivo CSS --> 
+</head>
+<body>
+    <h1 id="party-title">🎉 Fiesta de Colores 🎉</h1>
+    <p>🎶 Selecciona un color para animar la fiesta con colores y sonidos divertidos.</p>
+    <div id="color-palette"></div>
+    
+    <div id="add-color-section">
+        <input type="color" id="new-color-picker">
+        <button onclick="addNewColor()">Añadir Color</button>
+        <button onclick="resetDanceFloor()">Reiniciar Pista</button>
+    </div>
+    
+    <div id="dance-floor"></div>
+    
+    <div id="stats">
+        <h3>Conteo de Colores</h3>
+        <div id="color-votes"></div>
+        <p id="most-popular-color"></p>
+    </div>
+
+    <audio id='color-sound' src="./sonidos/button-4.mp3"></audio>
+
+    <script src="./app.js"></script> <!-- Vincula el archivo JavaScript -->
+</body>
+</html>
